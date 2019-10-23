@@ -3819,9 +3819,9 @@ input, select, textarea {
 
 
 			#sidebar {
-				height: 3.17em;
+				height: 3.6em;
 				left: 0;
-				line-height: 3.5em;
+				line-height: 2.5em;
 				overflow: hidden;
 				padding: 0;
 				text-align: center;
@@ -3875,9 +3875,42 @@ input, select, textarea {
 							background-image: none;
 							background-color: #efa749;
 						}
+                     .logo > a{
+                        display: inline-flex !important;
+                        position: absolute !important;
+                        left: -15em !important;
+                    }
+         @media screen and (min-width: 1000px){
+               #sidebar {
+                    height: 4.6em;
+                    left: 0;
+                    line-height: 2.5em;
+                    overflow: hidden;
+                    padding: 0;
+                    text-align: center;
+                    top: 0;
+                    width: 100%;
+                   font-size: 2em;
+                }
+              #sidebar + #wrapper {
+                    margin-left: 0;
+                    padding-top: 6.5em;
+                }
+            .logo > a {
+                display: inline-flex !important;
+                position: absolute !important;
+                left: 40% !important;
+                top: -1em !important;
+            }
+             .logo{
+                    margin-bottom: 28% !important;
+            }
+            
+        }
 
 
-		@media screen and (max-width: 736px) {
+        
+		@media screen and (max-width: 1098px) {
             #sidebar{
 				display: block;
 			}
@@ -3974,15 +4007,40 @@ input, select, textarea {
                 margin: 0;
                 height: auto;
             }
+            .logo > a{
+                display: inline-flex !important;
+                position: absolute !important;
+                left: 40% !important;
+                top: -4em;
+            }
+            .logo img{
+                width: 9vh;
+            }
             
             
 
 		}
-            .logo > a{
-                display: inline-flex !important;
-                position: absolute !important;
-                left: -15em !important;
+@media screen and (max-width: 900px) {
+            #sidebar {
+                height: 4.6em;
+                left: 0;
+                line-height: 2.5em;
+                overflow: hidden;
+                padding: 0;
+                text-align: center;
+                top: 0;
+                width: 100%;
             }
+            #sidebar + #wrapper {
+                margin-left: 0;
+                padding-top: 4.5em;
+            }
+    .logo{
+        margin-bottom: 20% !important;
+    }
+        }
+
+           
 /* Intro */
 
 	#intro {
