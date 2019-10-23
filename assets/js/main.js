@@ -49,15 +49,23 @@
 				.on('click', function() {
 
 					var $this = $(this);
+                    
 
 					// External link? Bail.
 						if ($this.attr('href').charAt(0) != '#')
 							return;
 
 					// Deactivate all links.
+                        if ($('.siderbar-active').hasClass('menu-btn-active')) {
+                            $('.menu-btn-active').removeClass('siderbar-active');
+                        } else {
+                            $('.menu-btn-active').addClass('siderbar-active');
+                        }
 						$sidebar_a.removeClass('active');
+                        
 
 					// Activate link *and* lock it (so Scrollex doesn't try to activate other links as we're scrolling to this one's section).
+                        
 						$this
 							.addClass('active')
 							.addClass('active-locked');
