@@ -3821,7 +3821,7 @@ input, select, textarea {
 			#sidebar {
 				height: 3.6em;
 				left: 0;
-				line-height: 2.5em;
+				line-height: 3.5em;
 				overflow: hidden;
 				padding: 0;
 				text-align: center;
@@ -3880,9 +3880,9 @@ input, select, textarea {
                         position: absolute !important;
                         left: -15em !important;
                     }
-         @media screen and (min-width: 1000px){
+         @media screen and (max-width: 1000px){
                #sidebar {
-                    height: 4.6em;
+                    height: 3.6em;
                     left: 0;
                     line-height: 2.5em;
                     overflow: hidden;
@@ -3899,11 +3899,11 @@ input, select, textarea {
             .logo > a {
                 display: inline-flex !important;
                 position: absolute !important;
-                left: 40% !important;
+                left: 45% !important;
                 top: -1em !important;
             }
              .logo{
-                    margin-bottom: 28% !important;
+                    margin-bottom: 10% !important;
             }
             
         }
@@ -3913,7 +3913,18 @@ input, select, textarea {
 		@media screen and (max-width: 1098px) {
             #sidebar{
 				display: block;
+                line-height: 2.5em;
+                font-size: 2em;
 			}
+             .logo > a {
+                display: inline-flex !important;
+                position: absolute !important;
+                left: 45% !important;
+                top: -1em !important;
+            }
+            .logo{
+                    margin-bottom: 25% !important;
+            }
             .inner{
                 display: block !important;
             }
@@ -4020,9 +4031,9 @@ input, select, textarea {
             
 
 		}
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 500px) {
             #sidebar {
-                height: 4.6em;
+                height: 2.6em;
                 left: 0;
                 line-height: 2.5em;
                 overflow: hidden;
@@ -4030,14 +4041,28 @@ input, select, textarea {
                 text-align: center;
                 top: 0;
                 width: 100%;
+                font-size: 1.5em;
             }
             #sidebar + #wrapper {
                 margin-left: 0;
                 padding-top: 4.5em;
             }
     .logo{
-        margin-bottom: 20% !important;
+        margin-bottom: 15% !important;
     }
+    .logo > a{
+                display: inline-flex !important;
+                position: absolute !important;
+                left: 40% !important;
+                top: -3em !important;
+            }
+    #sidebar nav ul li {
+    display: block;
+    height: inherit;
+    line-height: inherit;
+    margin: 0 0 0 0em;
+    padding: 0;
+}
         }
 
            
