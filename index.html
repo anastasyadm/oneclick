@@ -48,7 +48,7 @@
 							
 							<p>Особое предложение для наших клиентов: при заказе разработки любого сайта первичная SEO-настройка в подарок!</p>
 							<ul class="actions">
-								<li><a href="" class="button" >Оставить заявку</a></li>
+								<li><a href="#" class="button buy-btn" >Оставить заявку</a></li>
 							</ul>
 						</div>
 					</section>
@@ -105,7 +105,7 @@
 							<p>Заполните, пожалуйста, поля формы и наш оператор свяжется с вами сразу же как сможет. </p>
 							<div class="split style1">
 								<section>
-									<form method="post" action="#">
+									<form action="#">
 										<div class="fields">
 											<div class="field half">
 												<label for="name">Имя</label>
@@ -121,7 +121,7 @@
 											</div>
 										</div>
 										<ul class="actions">
-											<li><a href="" class="button submit">оставить заявку</a></li>
+											<li><input type="submit"  class="button submit buy-btn" value="отправить"></input></li>
 										</ul>
 									</form>
 								</section>
@@ -158,15 +158,73 @@
 										
 									</ul>
 								</section>
+								
 							</div>
 						</div>
 					</section>
-
+					<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog  popup-form" role="document">
+                            <form action="#">
+                                <a class="closebtn"><span aria-hidden="true">&times;</span></a>
+								<div class="fields">
+				        			<div class="field half">
+								        <label for="name">Имя</label>
+								        <input type="text" name="name" id="name" />
+								    </div>
+								    <div class="field half">
+								        <label for="email">Email</label>
+								        <input type="text" name="email" id="email" />
+								    </div>
+								    <div class="field">
+								        <label for="message">Что вы хотите</label>
+								        <textarea name="message" id="message" rows="5"></textarea>
+								        </div>
+								</div>
+								<ul class="actions">
+								    <li><input type="submit"  class="button submit buy-btn" value="отправить"></input></li>
+								</ul>
+				            </form>
+                        </div>
+                    </div>
 			</div>
 
 		
 
 		<!-- Scripts -->
+		    <script>
+                var link = document.querySelector(".buy-btn");
+                var form = document.querySelector(".popup-form");
+                var checkin = form.querySelector("[name=name-user]");
+                var checkout = form.querySelector("[name=name-email]");
+                var close = document.querySelector(".closebtn");
+
+                link.addEventListener ("click", function(event) {
+                    event.preventDefault();
+                    form.classList.toggle("popup-form-show");
+                    checkin.focus();
+                    form.classList.remove("popup-form-error");
+                });
+                close.addEventListener ("click", function(event) {
+                    event.preventDefault();
+                    form.classList.remove("popup-form-show");
+                });
+
+                window.addEventListener("keydown", function(event) {
+                    if (event.keyCode === 27) {
+                        if (form.classList.contains("popup-form-show")) {
+                            form.classList.remove("popup-form-show");
+                            form.classList.remove("popup-form-error");
+                        }
+                    }
+                });
+
+                form.addEventListener("submit", function(event) {
+                    if (!checkin.value || !checkout.value) {
+                        event.preventDefault();
+                        form.classList.add("popup-form-error");
+                    }
+                });
+            </script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>

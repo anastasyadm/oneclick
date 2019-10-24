@@ -3752,99 +3752,99 @@ input, select, textarea {
 					transition-delay: 4.25s;
 				}
 
-		#sidebar nav a {
-			-moz-transition: color 0.2s ease;
-			-webkit-transition: color 0.2s ease;
-			-ms-transition: color 0.2s ease;
-			transition: color 0.2s ease;
-			border: 0;
-			color: #242424;
-			display: block;
-			font-size: 0.6em;
-			font-weight: solid;
-			letter-spacing: 0.25em;
-			line-height: 1.75;
-			outline: 0;
-			padding: 0em 0;
-			position: relative;
-			text-decoration: none;
-			text-transform: uppercase;
-		}
+            #sidebar nav a {
+                -moz-transition: color 0.2s ease;
+                -webkit-transition: color 0.2s ease;
+                -ms-transition: color 0.2s ease;
+                transition: color 0.2s ease;
+                border: 0;
+                color: #242424;
+                display: block;
+                font-size: 0.6em;
+                font-weight: solid;
+                letter-spacing: 0.25em;
+                line-height: 1.75;
+                outline: 0;
+                padding: 0em 0;
+                position: relative;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
 
-			#sidebar nav a:before, #sidebar nav a:after {
-				border-radius: 0.2em;
-				bottom: 0;
-				content: '';
-				height: 0.2em;
-				position: absolute;
-				right: 0;
-				width: 100%;
-			}
+                #sidebar nav a:before, #sidebar nav a:after {
+                    border-radius: 0.2em;
+                    bottom: 0;
+                    content: '';
+                    height: 0.2em;
+                    position: absolute;
+                    right: 0;
+                    width: 100%;
+                }
 
-			#sidebar nav a:before {
-				background: #fafafa;
-			}
+                #sidebar nav a:before {
+                    background: #fafafa;
+                }
 
-			#sidebar nav a:after {
-				background-image: -moz-linear-gradient(to right, #ffffff, #f78f08);
-				background-image: -webkit-linear-gradient(to right, #ffffff, #f78f08); /*#ffffff, #fafafa*/
-				background-image: -ms-linear-gradient(to right, #ffffff, #f78f08);
-				background-image: linear-gradient(to right, #ffffff, #f78f08);
-				-moz-transition: max-width 0.2s ease;
-				-webkit-transition: max-width 0.2s ease;
-				-ms-transition: max-width 0.2s ease;
-				transition: max-width 0.28s ease;
-				max-width: 0;
-			}
+                #sidebar nav a:after {
+                    background-image: -moz-linear-gradient(to right, #ffffff, #f78f08);
+                    background-image: -webkit-linear-gradient(to right, #ffffff, #f78f08); /*#ffffff, #fafafa*/
+                    background-image: -ms-linear-gradient(to right, #ffffff, #f78f08);
+                    background-image: linear-gradient(to right, #ffffff, #f78f08);
+                    -moz-transition: max-width 0.2s ease;
+                    -webkit-transition: max-width 0.2s ease;
+                    -ms-transition: max-width 0.2s ease;
+                    transition: max-width 0.28s ease;
+                    max-width: 0;
+                }
 
-			#sidebar nav a:hover {
-				color: rgba(0, 0, 0, 0.55); /* цвет шрифта при наведении*/
-			}
+                #sidebar nav a:hover {
+                    color: rgba(0, 0, 0, 0.55); /* цвет шрифта при наведении*/
+                }
 
-			#sidebar nav a.active {
-				color: #000000;
-			}
+                #sidebar nav a.active {
+                    color: #000000;
+                }
 
-				#sidebar nav a.active:after {
-					max-width: 100%;
-				}
+                    #sidebar nav a.active:after {
+                        max-width: 100%;
+                    }
 
-		body.is-preload #sidebar > .inner {
-			opacity: 0;
-		}
+            body.is-preload #sidebar > .inner {
+                opacity: 0;
+            }
 
-		body.is-preload #sidebar nav ul li {
-			-moz-transform: translateY(2em);
-			-webkit-transform: translateY(2em);
-			-ms-transform: translateY(2em);
-			transform: translateY(2em);
-			opacity: 0;
-		}
+            body.is-preload #sidebar nav ul li {
+                -moz-transform: translateY(2em);
+                -webkit-transform: translateY(2em);
+                -ms-transform: translateY(2em);
+                transform: translateY(2em);
+                opacity: 0;
+            }
 
 
-			#sidebar {
-				height: 3.6em;
-				left: 0;
-				line-height: 3.5em;
-				overflow: hidden;
-				padding: 0;
-				text-align: center;
-				top: 0;
-				width: 100%;
-			}
+                #sidebar {
+                    height: 3.6em;
+                    left: 0;
+                    line-height: 3.5em;
+                    overflow: hidden;
+                    padding: 0;
+                    text-align: center;
+                    top: 0;
+                    width: 100%;
+                }
 
-				#sidebar > .inner {
-					-moz-flex-direction: row;
-					-webkit-flex-direction: row;
-					-ms-flex-direction: row;
-					flex-direction: row;
-					-moz-align-items: -moz-stretch;
-					-webkit-align-items: -webkit-stretch;
-					-ms-align-items: -ms-stretch;
-					align-items: stretch;
-					height: inherit;
-					line-height: inherit;
-				}
+                    #sidebar > .inner {
+                        -moz-flex-direction: row;
+                        -webkit-flex-direction: row;
+                        -ms-flex-direction: row;
+                        flex-direction: row;
+                        -moz-align-items: -moz-stretch;
+                        -webkit-align-items: -webkit-stretch;
+                        -ms-align-items: -ms-stretch;
+                        align-items: stretch;
+                        height: inherit;
+                        line-height: inherit;
+                    }
 
 				#sidebar nav {
 					height: inherit;
@@ -3885,7 +3885,7 @@ input, select, textarea {
                         left: -15em !important;
                     }
          @media screen and (max-width: 1000px){
-               #sidebar {
+             #sidebar {
                     height: 3.6em;
                     left: 0;
                     line-height: 2.5em;
@@ -3900,27 +3900,24 @@ input, select, textarea {
                     margin-left: 0;
                     padding-top: 6.5em;
                 }
-            .logo > a {
+             .logo > a {
                 display: inline-flex !important;
                 position: absolute !important;
                 left: 45% !important;
                 top: -1em !important;
-            }
+             }
              .logo{
                     margin-bottom: 10% !important;
             }
             
-        }
-
-
-        
+        } 
 		@media screen and (max-width: 1098px) {
             #sidebar{
 				display: block;
                 line-height: 2.5em;
                 font-size: 2em;
 			}
-             .logo > a {
+            .logo > a {
                 display: inline-flex !important;
                 position: absolute !important;
                 left: 45% !important;
@@ -4319,3 +4316,67 @@ body {
 	}
 }
 
+
+.popup-inp{
+	text-align: center;
+}
+.popup-inp input{
+	display: inline-block;	
+	color:rgb(189, 152, 92);
+	background: white ;
+	font-family:"Gotham Pro";
+	font-size:18px;
+	border: 1px solid rgb(189, 152, 92);
+	padding: 1rem 3rem;
+	margin: 0.8rem;
+}
+.popup-input{
+	width: 80%;
+    max-width: 1920px;
+}
+.modal-title{
+	text-align: center;
+}
+
+.modal-dialog{
+    display: none;
+}
+.popup-form-show{
+    max-width: 500px;
+    width: auto;
+    display: flex;
+    background-color: #fafafa;
+    position: absolute;
+    top: 50%;
+    margin: 0 30%;
+    padding: 50px;
+    border-radius: 3em;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    
+}
+.closebtn{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+}
+        @media screen and (max-width: 1280px) {
+            .popup-form-show{
+				margin: 0 10%;
+			}
+		}
+        @media screen and (max-width: 980px) {
+            .popup-form-show{
+					margin: 0 10%;
+				}
+		}
+
+        @media screen and (max-width: 736px) {
+            .popup-form-show{
+					margin: 0 10%;
+				}
+        }
+
+		

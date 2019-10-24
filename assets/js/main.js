@@ -190,9 +190,13 @@
 				}
 			});
     
-        
-
     
+        
+$('.closebtn').on('click', function(){
+    $(this).closest('.popup-form-show').fadeOut(100);
+   });
 
 })(jQuery);
+
+
 
