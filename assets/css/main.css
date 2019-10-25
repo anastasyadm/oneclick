@@ -3030,7 +3030,7 @@ input, select, textarea {
 			.spotlights > section > .image img {
 				border-radius: 0;
 				display: block;
-                height: 404px;
+                height: 518px;
                 width: 100%;
 
 			}
@@ -4026,7 +4026,7 @@ input, select, textarea {
                 top: -4em;
             }
             .logo img{
-                width: 9vh;
+                width: 7vh;
             }
             
             
